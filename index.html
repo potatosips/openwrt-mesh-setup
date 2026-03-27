@@ -537,11 +537,11 @@ footer a{color:var(--cyan2);text-decoration:none;}
 
         <div class="lbl">set hostname</div>
         <p>Navigate to <span class="nav-path">System → System → Hostname</span> and enter <code>mesh-1</code>, then Save & Apply.</p>
-        <img class="guide-img" src="https://gist.github.com/user-attachments/assets/86bf6a82-d083-453b-92d9-bf3350bd695b" alt="Hostname config">
+        <img class="guide-img" src="https://github.com/potatosips/openwrt-mesh-setup/blob/main/images/1.png?raw=true" alt="Hostname config">
 
         <div class="lbl">set ip address</div>
         <p>Navigate to <span class="nav-path">Network → Interfaces → LAN → Edit</span> and set <strong>IPv4 address</strong> to <code>192.168.1.1</code>, then Save & Apply.</p>
-        <img class="guide-img" src="https://gist.github.com/user-attachments/assets/b0f14330-c598-4e85-8604-4e25a5a75fb7" alt="IP config">
+        <img class="guide-img" src="https://github.com/potatosips/openwrt-mesh-setup/blob/main/images/2.png?raw=true" alt="IP config">
       </div>
     </div>
 
@@ -556,7 +556,7 @@ footer a{color:var(--cyan2);text-decoration:none;}
 
         <div class="lbl">set hostname</div>
         <p>Navigate to <span class="nav-path">System → System → Hostname</span> and enter <code>mesh-2</code>, then Save & Apply.</p>
-        <img class="guide-img" src="https://gist.github.com/user-attachments/assets/18e4e113-e386-4395-8a42-af16a6935fad" alt="Hostname mesh-2">
+        <img class="guide-img" src="https://github.com/potatosips/openwrt-mesh-setup/blob/main/images3.png?raw=true" alt="Hostname mesh-2">
 
         <div class="lbl">configure static ip via ssh</div>
         <div class="code-wrap">
@@ -633,7 +633,7 @@ footer a{color:var(--cyan2);text-decoration:none;}
       <div class="card-body">
         <p>Configure PPPoE on <em>mesh-1 only</em> per your ISP requirements.</p>
         <p>Navigate to <span class="nav-path">Network → Interfaces → Add new interface</span> and follow your ISP's PPPoE configuration.</p>
-        <img class="guide-img" src="https://gist.github.com/user-attachments/assets/5e846ed8-91c7-4e29-b27c-68ccbd5996d1" alt="PPPoE setup">
+        <img class="guide-img" src="https://github.com/potatosips/openwrt-mesh-setup/blob/main/images/4.png?raw=true" alt="PPPoE setup">
       </div>
     </div>
   </div>
@@ -723,9 +723,9 @@ footer a{color:var(--cyan2);text-decoration:none;}
       <div class="card-body">
         <p>Navigate to <span class="nav-path">Network → Wireless</span> on <em>both routers</em>. Configure the 5GHz radio for 802.11s mesh.</p>
         <div class="callout danger"><span class="ico">⚠</span><div><strong>Both nodes must have identical 5GHz wireless settings — and I mean EVERYTHING.</strong> Mismatched config is the #1 reason mesh fails to establish. Double-check every field.</div></div>
-        <img class="guide-img" src="https://gist.github.com/user-attachments/assets/4e851e6a-36e8-4dce-8fb5-62c79813f4c6" alt="Wireless mesh config 1">
-        <img class="guide-img" src="https://gist.github.com/user-attachments/assets/1016373a-1c3c-4ed4-ae97-928fbcc7c1ec" alt="Wireless mesh config 2">
-        <img class="guide-img" src="https://gist.github.com/user-attachments/assets/59cfb6ea-ae4f-4516-a94a-aaeaf8cab15e" alt="Wireless mesh config 3">
+        <img class="guide-img" src="https://github.com/potatosips/openwrt-mesh-setup/blob/main/images/5.png?raw=true" alt="Wireless mesh config 1">
+        <img class="guide-img" src="https://github.com/potatosips/openwrt-mesh-setup/blob/main/images/6.png?raw=true" alt="Wireless mesh config 2">
+        <img class="guide-img" src="https://github.com/potatosips/openwrt-mesh-setup/blob/main/images/7.png?raw=true" alt="Wireless mesh config 3">
       </div>
     </div>
   </div>
@@ -746,7 +746,7 @@ footer a{color:var(--cyan2);text-decoration:none;}
       <div class="card-body">
         <p>Navigate to <span class="nav-path">Network → Interfaces → Global network options</span></p>
         <p>Set <strong>IPv6 ULA-Prefix</strong> → leave blank. Set <strong>Steering flows (RPS)</strong> → <code>128</code>. Save & Apply.</p>
-        <img class="guide-img" src="https://gist.github.com/user-attachments/assets/61e2bb20-b94a-40a5-a0c9-1f2e33deb928" alt="RPS config">
+        <img class="guide-img" src="https://github.com/potatosips/openwrt-mesh-setup/blob/main/images/8.png?raw=true" alt="RPS config">
       </div>
     </div>
 
@@ -757,7 +757,7 @@ footer a{color:var(--cyan2);text-decoration:none;}
       </div>
       <div class="card-body">
         <p>Navigate to <span class="nav-path">Network → Interfaces → LAN → Edit → DHCP Server → General Setup</span> and check <strong>Ignore interface</strong>. Save & Apply.</p>
-        <img class="guide-img" src="https://gist.github.com/user-attachments/assets/f5897914-f27a-4086-beee-af399c6ed646" alt="DHCP disable">
+        <img class="guide-img" src="https://github.com/potatosips/openwrt-mesh-setup/blob/main/images/9.png?raw=true" alt="DHCP disable">
       </div>
     </div>
 
@@ -768,7 +768,7 @@ footer a{color:var(--cyan2);text-decoration:none;}
       </div>
       <div class="card-body">
         <p>Navigate to <span class="nav-path">System → Startup</span> and disable: <code>dnsmasq</code>, <code>odhcpd</code>, and optionally <code>firewall</code>.</p>
-        <img class="guide-img" src="https://gist.github.com/user-attachments/assets/a40548ec-d9ec-4afe-b559-6a50584d671e" alt="Startup services">
+        <img class="guide-img" src="https://github.com/potatosips/openwrt-mesh-setup/blob/main/images/10.png?raw=true" alt="Startup services">
 
         <div class="lbl">or via ssh</div>
         <div class="code-wrap">
